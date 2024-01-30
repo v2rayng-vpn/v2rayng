@@ -6,10 +6,22 @@ body {
   font-family: Arial, sans-serif;
   direction: rtl;
   text-align: right;
+  display: flex;
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+}
+
+aside {
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 20%; /* Adjust the width as needed */
 }
 
 header {
-  background-color: #f2f2f2;
+  flex: 1;
   padding: 20px;
   text-align: center;
 }
@@ -32,6 +44,16 @@ h1 {
 main {
   padding: 20px;
   text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #000;
 }</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +61,16 @@ main {
   <title>خرید فیلترشکن قوی اندروید + آیفون</title>
 </head>
 <body>
+   <div class="container">
+    <aside>
+      <h2>منو</h2>
+      <ul>
+        <li><a href="#">صفحه اصلی</a></li>
+        <li><a href="#">محصولات</a></li>
+        <li><a href="#">درباره ما</a></li>
+        <li><a href="#">تماس با ما</a></li>
+      </ul>
+    </aside>
   <header>
     <h1>خرید فیلترشکن خرید فیلتر شکن قوی اندروید + آیفون</h1>
     <p>خرید فیلترشکن v2ray کانفیگ V2RAYNG خرید VPN ویتوری ویتوری V2ray</p>
