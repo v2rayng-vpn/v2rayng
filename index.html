@@ -114,14 +114,14 @@ function calculatePrice() {
     var size = Number(document.getElementById('size').value);
  var price;
    if (productType === 'A') {
-    price = 450000000;
+    price = 131000;
         
     } else if (productType === 'B') {
-        price *= 10000;
+        price *= 291000;
     }  
     quantity=Number(document.getElementById('quantity').value) *price;
     
-    size = Number(document.getElementById('size').value) * 12000;
+    size = Number(document.getElementById('size').value) * 40000;
      let c="t";
 price = quantity + size;
     document.getElementById('price').innerHTML= price + " تومان";
@@ -351,10 +351,8 @@ img {
     <div class="container">
         <label for="productType">نوع محصول:</label>
         <select id="productType">
-            <option value="A">دستگاه بسته بندی</option>
-            <option value="B">محصول B</option>
-                  <option value="B">محصول B</option>
-                        <option value="B">محصول B</option>
+            <option value="A">اشتراک 1 ماهه</option>
+            <option value="B">اشتراک 3 ماهه</option>
         </select>
     </div>
     
@@ -364,7 +362,7 @@ img {
     </div>
     
     <div class="container">
-        <label for="size">سایز:</label>
+        <label for="size">تعداد کاربر:</label>
         <input type="number" id="size" min="1" value="1">
     </div>
 
