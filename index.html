@@ -2,33 +2,7 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-<script>
-// JavaScript will go here
-function calculatePrice() {
-    var productType = document.getElementById('productType').value;
-    var quantity = Number(document.getElementById('quantity').value);
-    var size = Number(document.getElementById('size').value);
- var price;
-   if (productType === 'A') {
-    price = 450000000;
-        
-    } else if (productType === 'B') {
-        price *= 10000; // 10% more expensive for product B
-    }
-    
-    quantity=Number(document.getElementById('quantity').value) *price;
-    
-    size = Number(document.getElementById('size').value) * 12000;
-    // Add your pricing logic here. For this example, we'll just multiply values.
-     // Example calculation
-     let c="t";
-price = quantity + size;
-    // Assuming different product types have different base prics
 
-    document.getElementById('price').innerHTML= price + " تومان";
-}
-</script>
-<style>
 body {
   font-family: Arial, sans-serif;
   direction: rtl;
@@ -133,6 +107,27 @@ li a {
 <!DOCTYPE html>
 <html>
 <head>
+	<script>
+function calculatePrice() {
+    var productType = document.getElementById('productType').value;
+    var quantity = Number(document.getElementById('quantity').value);
+    var size = Number(document.getElementById('size').value);
+ var price;
+   if (productType === 'A') {
+    price = 450000000;
+        
+    } else if (productType === 'B') {
+        price *= 10000;
+    }  
+    quantity=Number(document.getElementById('quantity').value) *price;
+    
+    size = Number(document.getElementById('size').value) * 12000;
+     let c="t";
+price = quantity + size;
+    document.getElementById('price').innerHTML= price + " تومان";
+}
+</script>
+<style>
 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/more-vertical.css' rel='stylesheet'>
 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/more-vertical-alt.css' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -327,7 +322,7 @@ img {
 <body>
 <div class="div-h">
 <div class="header">
-  <h1>ساخت ماشین آلات صنعتی و فروش دستگاه بسته بندی</h1>
+  <h1>خرید فیلتر شکن V2ryaNG | خرید اشتراک NapsterneTV</h1>
 </div>
 
 <div class="row">
