@@ -2,6 +2,32 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
+<script>
+// JavaScript will go here
+function calculatePrice() {
+    var productType = document.getElementById('productType').value;
+    var quantity = Number(document.getElementById('quantity').value);
+    var size = Number(document.getElementById('size').value);
+ var price;
+   if (productType === 'A') {
+    price = 450000000;
+        
+    } else if (productType === 'B') {
+        price *= 10000; // 10% more expensive for product B
+    }
+    
+    quantity=Number(document.getElementById('quantity').value) *price;
+    
+    size = Number(document.getElementById('size').value) * 12000;
+    // Add your pricing logic here. For this example, we'll just multiply values.
+     // Example calculation
+     let c="t";
+price = quantity + size;
+    // Assuming different product types have different base prics
+
+    document.getElementById('price').innerHTML= price + " تومان";
+}
+</script>
 <style>
 body {
   font-family: Arial, sans-serif;
@@ -13,6 +39,29 @@ body {
 .container {
   display: flex; 
   flex-direction: row;
+}
+form {
+direction:rtl;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-family:vazirmatn;
+    border-radius:8px;
+    border-color: #2A63B0;
+   
+  
+}
+.cc{font-family:vazirmatn; 
+background-color: #2A63B0!important;
+    color:#fff;
+}
+input, select, #quantity, #size, container,.cc {
+    margin: 10px 0;  border-radius:8px;  font-family:vazirmatn;
+      border-color: #2A63B0;
+}
+.container {
+    margin-bottom: 20px;  font-family:vazirmatn;
+      border-color: #2A63B0;
 }
 
 aside {
@@ -302,6 +351,39 @@ img {
     <a href="https://t.me/v2rayngsup">شش ماهه تک کاربره نا محدود</a>
   </div>
   </div> 
+	<div>
+		<form onsubmit="event.preventDefault(); calculatePrice();">
+    <div class="container">
+        <label for="productType">نوع محصول:</label>
+        <select id="productType">
+            <option value="A">دستگاه بسته بندی</option>
+            <option value="B">محصول B</option>
+                  <option value="B">محصول B</option>
+                        <option value="B">محصول B</option>
+        </select>
+    </div>
+    
+    <div class="container">
+        <label for="quantity">تعداد:</label>
+        <input type="number" id="quantity" min="1" value="1">
+    </div>
+    
+    <div class="container">
+        <label for="size">سایز:</label>
+        <input type="number" id="size" min="1" value="1">
+    </div>
+
+    
+    <div class="container">
+        <button class="cc" type="submit">محاسبه قیمت</button>
+    </div>
+    
+    <div class="container">
+        <p for="price">قیمت:</p>
+        <p type="text" id="price" readonly>
+    </div>
+</form>
+	</div>
 
   <div class="col-6">
     <h1>خرید فیلترشکن خرید فیلتر شکن قوی اندروید + آیفون</h1>
