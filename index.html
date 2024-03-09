@@ -1,454 +1,729 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Chain App Dev - App Landing Page HTML5 Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 <!--
-<!DOCTYPE html>
-<html lang="fa">
-<head>
 
-body {
-  font-family: Arial, sans-serif;
-  direction: rtl;
-  text-align: right;
-  display: flex;
-}
+TemplateMo 570 Chain App Dev
 
-.container {
-  display: flex; 
-  flex-direction: row;
-}
-form {
-direction:rtl;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    font-family:vazirmatn;
-    border-radius:8px;
-    border-color: #2A63B0;
-   
-  
-}
-.cc{font-family:vazirmatn; 
-background-color: #2A63B0!important;
-    color:#fff;
-}
-input, select, #quantity, #size, container,.cc {
-    margin: 10px 0;  border-radius:8px;  font-family:vazirmatn;
-      border-color: #2A63B0;
-}
-.container {
-    margin-bottom: 20px;  font-family:vazirmatn;
-      border-color: #2A63B0;
-}
+https://templatemo.com/tm-570-chain-app-dev
 
-aside {
-  background-color: #f2f2f2;
-  padding: 20px;
-  width: 20%;  Adjust the width as needed
-}
-
-header {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  animation: slide-in 1s forwards;
-}
-
-@keyframes slide-in {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-li a {
-  text-decoration: none;
-  color: #000;
-}</style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>خرید فیلترشکن قوی اندروید + آیفون</title>
-</head>
-<body>
-   <div class="container">
-    <aside>
-      <h2>منو</h2>
-      <ul>
-        <li><a href="#">صفحه اصلی</a></li>
-        <li><a href="#">محصولات</a></li>
-        <li><a href="#">درباره ما</a></li>
-        <li><a href="#">تماس با ما</a></li>
-      </ul>
-    </aside>
-  <header>
-
-  </header>
-  <main>
-    <p>محتوای وب سایت در زبان فارسی قرار داده می‌شود.</p>
-  </main>
-</body>
-</html>
 -->
-<!DOCTYPE html>
-<html>
-<head>
-	<script>
-function calculatePrice() {
-    var productType = document.getElementById('productType').value;
-    var quantity = Number(document.getElementById('quantity').value);
-    var size = Number(document.getElementById('size').value);
- var price;
-   if (productType === 'A') {
-    price = 131000;
-        
-    } else if (productType === 'B') {
-        price *= 291000;
-    }  
-    quantity=Number(document.getElementById('quantity').value) *price;
-    
-    size = Number(document.getElementById('size').value) * 40000;
-     let c="t";
-price = quantity + size;
-    document.getElementById('price').innerHTML= price + " تومان";
-}
-</script>
-<style>
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/more-vertical.css' rel='stylesheet'>
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/more-vertical-alt.css' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link href='https://unpkg.com/css.gg@2.0.0/icons/css/more-alt.css' rel='stylesheet'>
-	<link rel='stylesheet' id='astra-google-fonts-css' href='https://fonts.googleapis.com/css?family=Vazirmatn%3A400%2C500%2C700%2C600&#038;display=fallback&#038;ver=4.6.4' media='all' />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@import url('https://unpkg.com/css.gg@2.0.0/icons/css/align-center.css');
-* {
-  box-sizing: border-box;
-  direction:rtl;
-  font-family:vazirmatn;
 
-  
-}
-.img1{  
-display: flex;
-    flex-direction: row;
-    justify-content: center!important;
-}
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
 
-.row::after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-html {
-  font-family: "Lucida Sans", sans-serif;
-}
-
-.header {
-  background-color: #282E53;
-  color: #ffffff;
-  padding: 15px;
-    text-align:cnter;
-}
-body{background-color:#E1EBEE;
-}
-.li-sef {background-color: #47AB6D!important;
-
-
-} .li-sef:hover{  background-color: #4C516D!important;}
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-    text-align:center;
-}
-.li-sef a , .menu a { color:#fff!important; text-decoration: wavy;}
-.menu li {
-  padding: 8px;
-  margin-bottom: 10px;
-  background-color: #4D4DFF;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border-radius:8px;
-}
-
-.menu li:hover {
-  background-color: #47AB6D;
-}
-
-.aside {
-  background-color: #4C516D;
-  padding: 15px;
-  color: #ffffff;
-  text-align: center;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.footer {
-  background-color: #4C516D;
-  color: #ffffff;
-  text-align: center;
-  font-size: 12px;
-  padding: 15px;
-}
-.col-6{
-text-align:justify!important;
-}
-
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-h1,h2,h3{
-font-size:20px;}
-.aside{
-background-color: #4C516D;}
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
-
-.div-h{
-}
-
-.dropdown {
-  overflow: show;
-  width:100%;
-  display:flex;
-  justify-content: center;
-  
-
-}
-
-
-
-.dropbtn {
-
-justify-content: center;
-display: block;
-  
-  }
-
-.dropdown .dropbtn {
-background-color:#4D4DFF;
-  cursor: pointer;
-    width:50%;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-
- 
-  font-family: inherit;
-  margin: 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-   margin-top: 70px;
-
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: right;
- 
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-
-</style>
-
-</head>
+  </head>
 
 <body>
-<div class="div-h">
-<div class="header">
-  <h1>خرید فیلتر شکن V2ryaNG | خرید اشتراک NapsterneTV</h1>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Chain App Dev">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Pricing</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Newsletter</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i> Sign In Now</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!-- Social Login -->
+        <div class="social_login">
+            <div class="">
+                <a href="#" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connect with Facebook</span>
+
+                </a>
+
+                <a href="#" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connect with Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Or use your Email address</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+            </div>
+        </div>
+
+        <!-- Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>Email / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" />
+                    <label for="remember">Remember me on this computer</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">Forgot password?</a>
+        </div>
+
+        <!-- Register Form -->
+        <div class="user_register">
+            <form>
+                <label>Full Name</label>
+                <input type="text" />
+                <br />
+
+                <label>Email Address</label>
+                <input type="email" />
+                <br />
+
+                <label>Password</label>
+                <input type="password" />
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" />
+                    <label for="send_updates">Send me occasional email updates</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
+                    <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
 </div>
 
-<div class="row">
-  <div class="col-3 menu">
-    <ul>
-    <li><a href="#">خرید فیلتر شکن V2rayNG</a></li>
-    <li><a href="#">خرید فیلتر شکن NapsterneTV</li>
-    <li><a href="#">خرید فیلتر شکن قوی اندروید</a></li>
-    <li><a href="#">خرید فیلتر شکن پر سرعت ویندوز</a></li>
-     <li><a href="#">خرید وی پی ان قوی و پرسرعت</a></li>
-     <li class="li-sef"><a href="https://t.me/v2rayngsup">همین حالا سفارش دهید!</a></li>
-    </ul>
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>Get The Latest App From App Stores</h2>
+                    <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap v5.1.3 CSS layout provided by TemplateMo, a great website to download free CSS templates.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-apple"></i></a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="#contact">Free Quote <i class="fab fa-google-play"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-   <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">انتخاب سرویس ها
-    <i class="gg-more-vertical-alt"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="https://t.me/v2rayngsup">یک ماهه تک کاربره نا محدود</a>
-    <a href="https://t.me/v2rayngsup">سه ماهه تک کاربره نا محدود</a>
-    <a href="https://t.me/v2rayngsup">شش ماهه تک کاربره نا محدود</a>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>If you need the greatest collection of HTML templates for your business, please visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS</a> Blog. If you need to have a contact form PHP script, go to <a href="https://templatemo.com/contact" target="_parent">our contact page</a> for more information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>App Maintenance</h4>
+            <p>You are not allowed to redistribute this template ZIP file on any other website.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Rocket Speed of App</h4>
+            <p>You are allowed to use the Chain App Dev HTML template. Feel free to modify or edit this layout.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Multi Workflow Idea</h4>
+            <p>If this template is beneficial for your work, please support us <a rel="nofollow" href="https://paypal.me/templatemo" target="_blank">a little via PayPal</a>. Thank you.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>24/7 Help &amp; Support</h4>
+            <p>Lorem ipsum dolor consectetur adipiscing elit sedder williamsburg photo booth quinoa and fashion axe.</p>
+            <div class="text-button">
+              <a href="#">Read More <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>About <em>What We Do</em> &amp; Who We Are</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Maintance Problems</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">24/7 Support &amp; Help</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Fixing Issues About</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Co. Development</a></h4>
+                <p>Lorem Ipsum Text</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor idunte ut labore et dolore adipiscing  magna.</p>
+              <div class="gradient-button">
+                <a href="#">Start 14-Day Free Trial</a>
+              </div>
+              <span>*No Credit Card Required</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Check What <em>The Clients Say</em> About Our App Dev</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>David Martino Co</h4>
+                            <span class="date">30 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Financial Apps</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Jake Harris Nyo</h4>
+                            <span class="date">29 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Digital Business</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>May Catherina</h4>
+                            <span class="date">27 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Business &amp; Economics</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Random User</h4>
+                            <span class="date">24 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">New App Ecosystem</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mark Amber Do</h4>
+                            <span class="date">21 November 2021</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Web Development</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>David Martino</h4>
+                                  <span>CEO of David Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“CTO, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Jake H. Nyo</h4>
+                                  <span>CTO of Digital Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“May, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>May C.</h4>
+                                  <span>Founder of Catherina Co.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Random Staff</h4>
+                                  <span>Manager, Digital Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Mark, Lorem ipsum dolor sit amet, consectetur adpiscing elit, sed do eismod tempor idunte ut labore et dolore magna aliqua darwin kengan
+                                  lorem ipsum dolor sit amet, consectetur picing elit massive big blasta.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.jpg" alt="">
+                                <div class="right-content">
+                                  <h4>Mark Am</h4>
+                                  <span>CTO, Amber Do Company</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>We Have The Best Pre-Order <em>Prices</em> You Can Get</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor incididunt ut labore et dolore magna.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$12</span>
+            <h4>Standard Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>20 TB of Storage</li>
+              <li class="non-function">Life-time Support</li>
+              <li class="non-function">Premium Add-Ons</li>
+              <li class="non-function">Fastest Network</li>
+              <li class="non-function">More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+            <span class="price">$25</span>
+            <h4>Business Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>50 TB of Storage</li>
+              <li>Life-time Support</li>
+              <li>Premium Add-Ons</li>
+              <li class="non-function">Fastest Network</li>
+              <li class="non-function">More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">$66</span>
+            <h4>Premium Plan App</h4>
+            <div class="icon">
+              <img src="assets/images/pricing-table-01.png" alt="">
+            </div>
+            <ul>
+              <li>Lorem Ipsum Dolores</li>
+              <li>120 TB of Storage</li>
+              <li>Life-time Support</li>
+              <li>Premium Add-Ons</li>
+              <li>Fastest Network</li>
+              <li>More Options</li>
+            </ul>
+            <div class="border-button">
+              <a href="#">Purchase This Plan Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div> 
-	<div>
-		<form onsubmit="event.preventDefault(); calculatePrice();">
+
+  <footer id="newsletter">
     <div class="container">
-        <label for="productType">نوع محصول:</label>
-        <select id="productType">
-            <option value="A">اشتراک 1 ماهه</option>
-            <option value="B">اشتراک 3 ماهه</option>
-        </select>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Join our mailing list to receive the news &amp; latest trends</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact Us</h4>
+            <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+            <p><a href="#">010-020-0340</a></p>
+            <p><a href="#">info@company.co</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Free Apps</a></li>
+              <li><a href="#">App Engine</a></li>
+              <li><a href="#">Programming</a></li>
+              <li><a href="#">Development</a></li>
+              <li><a href="#">App News</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">App Dev Team</a></li>
+              <li><a href="#">Digital Web</a></li>
+              <li><a href="#">Normal Apps</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>About Our Company</h4>
+            <div class="logo">
+              <img src="assets/images/white-logo.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com/" target="_blank" title="css templates">TemplateMo</a></p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <div class="container">
-        <label for="quantity">تعداد:</label>
-        <input type="number" id="quantity" min="1" value="1">
-    </div>
-    
-    <div class="container">
-        <label for="size">تعداد کاربر:</label>
-        <input type="number" id="size" min="1" value="1">
-    </div>
+  </footer>
 
-    
-    <div class="container">
-        <button class="cc" type="submit">محاسبه قیمت</button>
-    </div>
-    
-    <div class="container">
-        <p for="price">قیمت:</p>
-        <p type="text" id="price" readonly>
-    </div>
-</form>
-	</div>
 
-  <div class="col-6">
-    <h1>خرید فیلترشکن خرید فیلتر شکن قوی اندروید + آیفون</h1>
-    <p>خرید فیلترشکن v2ray کانفیگ V2RAYNG خرید VPN ویتوری ویتوری V2ray</p>
-    <p>
-      اگر به دنبال حریم خصوصی و امنیت آنلاین خود هستید، خرید یک فیلترشکن قوی و یا یک وی پی ان مطمئنا یک گزینه خوب برای شماست. V2rayNG و NapsterneTV از جمله ابزارهای محبوبی هستند که امکان دسترسی امن به اینترنت را فراهم می‌کنند.
-</p>   <p>
-V2rayNG یک نرم افزار فیلترشکن قدرتمند است که قابلیت‌های پیشرفته‌ای ارائه می‌دهد و به شما این امکان را می‌دهد که به طور ایمن و پنهانی از اینترنت استفاده نمایید. از طرف دیگر، NapsterneTV یک سرویس وی پی ان (VPN) سریع و قوی است که به شما امکان می‌دهد تا به صورت امن از رویه‌های محتوایی محدود شده و مسدود شده دسترسی پیدا کنید.
-</p><p>
-با بهره‌گیری از این ابزارها، شما می‌توانید به آسانی از آزادی اطلاعات و محتوای دلخواه خود لذت ببرید و در عین حال از امنیت آنلاین خود مطمئن شوید.</p>
-<p>
-بنابراین، اگر به دنبال ابزارهای قدرتمندی برای حفظ حریم خصوصی اطلاعات خود هستید، خرید یک فیلترشکن قوی مانند V2rayNG و یا استفاده از یک وی پی ان پرسرعت مانند NapsterneTV می‌تواند گزینه‌ای مناسب برای شما باشد.
-    </p>
-
- <div class="menu">
-    <ul>
-     <li class="li-sef"><a href="https://t.me/v2rayngsup">همین حالا سفارش دهید!</a></li>
-    </ul>
-  </div>
-
-<div class="img1">  <p> <img style="display:block" decoding="async" width="auto" height="auto" src="#" alt=""/></p>
-</div>
-     <article>
-       
-      <h2>خرید وی پی ان قوی و پرسرعت</h2>
-    <p>
-      ویتوری یا V2ray یکی از فیلترشکن‌های پرقدرت و پرافزوده در دنیای اینترنت است. این فیلترشکن با عملکرد بسیار قدرتمند و قابلیت‌های پیشرفته‌ای که ارائه می‌دهد، به شما این امکان را می‌دهد که به طور امن و محرمانه به اینترنت دسترسی پیدا کنید.
-    </p>
-    <p>
-      با ویتوری، می‌توانید از رویه‌ها و فیلترینگ‌های اینترنتی عبور کرده و به آسانی به منابع غیرقابل دسترس دست یابید، همچنین امکان دسترسی به منابع خارجی و مسدود شده نیز از دیگر ویژگی‌های این فیلترشکن است.
-    </p>
-    <p>
-      ویتوری با پشتیبانی از پروتکل‌های امنیتی مانند TLS (نسخه کُدشده HTTPS) و توانایی انتخاب و تنظیم پراکسی‌ها و روتینگ‌های پیچیده، از لحاظ امنیتی یکی از بهترین انتخاب‌ها برای حفظ حریم شخصی و دسترسی به اطلاعات محرمانه می‌باشد.
-    </p>
-</article>
-  </div>
-
-  <div class="col-3 right">
-    <div class="aside">
-      <h2 style="color:yellow">چرا ما؟</h2>
-      <p>پشتیبانی گارانتی</p>
-      <h2 style="color:yellow">مناسب و پر سرعت و قوی</h2>
-      <p>صفر تا صد راه اندازی و نصب</p>
-      <h2 style="color:yellow">انواع سرویس ها</h2>
-      <p>مناسب ویندوز، اندروید و آیفون و... با تمامی نت ها بدون قطعی و افت سرعت با آی پی ثابت.</p>
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <p>بهترین سایت خرید وی پی ان VPN</p>
-</div>
-</div>
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
 </body>
 </html>
-
-
-
