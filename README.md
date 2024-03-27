@@ -1,5 +1,4 @@
 ## خرید فیلترشکن V2rayNG
-خرید فیلتر شکن V2rayNG
 
 📞✉️[جهت ارسال پیام اینجا کلیک کنید](https://v2rayng-vpn.github.io/v2rayng/)
 
