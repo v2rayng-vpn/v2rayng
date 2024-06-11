@@ -8,8 +8,7 @@
 ✅ خرید فوری فیلترشکن از ربات:
 https://t.me/V2rayNG_gptbot
 
-🟢کلیک کنید:[ارسال پیام در روبیکا]
-(https://rubika.ir/mehdi_psychen)
+🟢کلیک کنید:[ارسال پیام در روبیکا](https://rubika.ir/mehdi_psychen)
 
 پشتیبانی ۲۴ ساعته فوری
 
