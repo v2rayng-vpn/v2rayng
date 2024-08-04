@@ -1,5 +1,5 @@
 ## خرید فیلترشکن V2rayNG
-متن تبلیغاتی برای فروش فیلتر شکن پرسرعت و تانل با برنامه‌های V2ray، V2rayNG، NapsterneTV، Hiddifynext، V2box، Foxray، Nekonbox، Sing-box:
+فروش فیلتر شکن پرسرعت و تانل با برنامه‌های V2ray، V2rayNG، NapsterneTV، Hiddifynext، V2box، Foxray، Nekonbox، Sing-box:
 
 🔴برای ارسال پیام در تلگرام از طریق لینک زیر: https://t.me/v2rayngsup
 
